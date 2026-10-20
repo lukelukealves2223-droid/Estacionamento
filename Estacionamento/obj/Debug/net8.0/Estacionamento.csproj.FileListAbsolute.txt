@@ -1,0 +1,14 @@
+/home/luke/Documentos/Programação/Projetos Csharp/Estacionamento/obj/Debug/net8.0/Estacionamento.GeneratedMSBuildEditorConfig.editorconfig
+/home/luke/Documentos/Programação/Projetos Csharp/Estacionamento/obj/Debug/net8.0/Estacionamento.AssemblyInfoInputs.cache
+/home/luke/Documentos/Programação/Projetos Csharp/Estacionamento/obj/Debug/net8.0/Estacionamento.AssemblyInfo.cs
+/home/luke/Documentos/Programação/Projetos Csharp/Estacionamento/obj/Debug/net8.0/Estacionamento.csproj.CoreCompileInputs.cache
+/home/luke/Documentos/Programação/Projetos Csharp/Estacionamento/bin/Debug/net8.0/Estacionamento
+/home/luke/Documentos/Programação/Projetos Csharp/Estacionamento/bin/Debug/net8.0/Estacionamento.deps.json
+/home/luke/Documentos/Programação/Projetos Csharp/Estacionamento/bin/Debug/net8.0/Estacionamento.runtimeconfig.json
+/home/luke/Documentos/Programação/Projetos Csharp/Estacionamento/bin/Debug/net8.0/Estacionamento.dll
+/home/luke/Documentos/Programação/Projetos Csharp/Estacionamento/bin/Debug/net8.0/Estacionamento.pdb
+/home/luke/Documentos/Programação/Projetos Csharp/Estacionamento/obj/Debug/net8.0/Estacionamento.dll
+/home/luke/Documentos/Programação/Projetos Csharp/Estacionamento/obj/Debug/net8.0/refint/Estacionamento.dll
+/home/luke/Documentos/Programação/Projetos Csharp/Estacionamento/obj/Debug/net8.0/Estacionamento.pdb
+/home/luke/Documentos/Programação/Projetos Csharp/Estacionamento/obj/Debug/net8.0/Estacionamento.genruntimeconfig.cache
+/home/luke/Documentos/Programação/Projetos Csharp/Estacionamento/obj/Debug/net8.0/ref/Estacionamento.dll
