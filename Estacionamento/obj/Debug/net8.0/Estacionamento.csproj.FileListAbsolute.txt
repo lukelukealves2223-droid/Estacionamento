@@ -12,3 +12,4 @@
 /home/luke/Documentos/Programação/Projetos Csharp/Estacionamento/obj/Debug/net8.0/Estacionamento.pdb
 /home/luke/Documentos/Programação/Projetos Csharp/Estacionamento/obj/Debug/net8.0/Estacionamento.genruntimeconfig.cache
 /home/luke/Documentos/Programação/Projetos Csharp/Estacionamento/obj/Debug/net8.0/ref/Estacionamento.dll
+/home/luke/Documentos/Programação/Projetos Csharp/Estacionamento/obj/Debug/net8.0/Estacionamento.sourcelink.json

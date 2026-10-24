@@ -31,10 +31,7 @@ bool z = true;
 
             case "2":
                 ///Adiciona carro
-                Console.WriteLine("Digite o numero da placa do carro: ");
-                    string p = Console.ReadLine();
-
-                while(z){  estacionamento.VerificadorPlaca(p, z );  }
+                estacionamento.VerificadorPlaca();
                     break;
                     
             case "3": break;        
