@@ -16,8 +16,7 @@ bool z = true;
     
     Console.Clear();
 
-    Console.Write("==== MENU ESTACIONAMENTO  ===== ");
-    Console.WriteLine("Opções......\t");
+    Console.Write("==== MENU ESTACIONAMENTO  ===== \n");
     Console.WriteLine("Verificar 1\n Adicionar Carro 2\n Despachar Carro 3\n Verificar lucro 4\n");
     Console.WriteLine("Digite a opção: ");
         string esc = Console.ReadLine();

@@ -15,7 +15,9 @@ public class Estacionamento
         Console.WriteLine("Digite o numero da placa do carro: ");
             string p = Console.ReadLine();
 
-        if(p.Length < 7 || p.Length > 7) /// verifica na função para o usuario escrever novamente o nome da placa
+        if(p.Length < 7 || p.Length > 7) 
+        /// verifica na função para o usuario escrever novamente o nome da placa
+        /// modificar variavel que guarda placa de carro para banco de dados....
         {
             Console.WriteLine("Esse modelo de placa não é valido, aperte qualquer tecla e digite novamamente...");
                 Console.ReadLine();
@@ -34,42 +36,52 @@ public class Estacionamento
         }while(true);
     }
 
-
     public void VerificarCarros() /// mostra a lista de carros
     {
         Console.Clear();
-        for(int i=0; i < Carros.Length; i++)
+        for(int i=0; i < this.Carros.Length; i++)
         {
-            Console.WriteLine(Carros[i]+" \n");
-            Console.WriteLine("Precione qualquet tecla para voltar ao menu;");
-            Console.ReadKey();
-            break;
+            Console.WriteLine($"Vaga número {i} " + this.Carros[i]+" \n");
+        
         }
+        Console.WriteLine("Precione qualquet tecla para voltar ao menu;");
+            Console.ReadKey();
+
     }
 
-    private void AdicionarCarro(string carro)     /// requer ajuste pois não está adicionado masi de 2 carros na lista
+    private void AdicionarCarro(string carro)
     {
+        bool guardado = false;
         Console.Clear();
-        Console.WriteLine("Digite o nome do carro que possa ser identificado: ");
+        Console.WriteLine("Digite o nome do proprieta ");
             carro = Console.ReadLine();
 
         for(int i = 0; i < Carros.Length; i++)
         { 
        
 
-            if(Carros[i] == null)
+            if(this.Carros[i] == null)
             {
                 this.Carros[i] = carro;
-
+                guardado = true;
 
                 break;
             }
         }
         
-        Console.WriteLine("Carro adicionado !!!\n");
-        Console.WriteLine("Precione qualquer tecla...");
-        Console.ReadKey();
-        
+            if(guardado == false)
+        {
+            Console.Write("Todas as vagas estão cheias \n");
+            Console.Write("Precione qualquer tecla");    
+                Console.ReadKey();
+
+        }
+        else
+        {
+            Console.WriteLine("Carro adicionado !!!\n");
+            Console.WriteLine("Precione qualquer tecla...");
+                Console.ReadKey();
+        }
         
     }
 
