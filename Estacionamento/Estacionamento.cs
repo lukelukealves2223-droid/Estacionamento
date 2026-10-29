@@ -3,7 +3,7 @@ using System.Dynamic;
 using System.Security.Cryptography.X509Certificates;
 public class Estacionamento
 {
-    private string[] Placacarro {set; get;}
+    public string []? Placacarro {set; get;}
     public string[] Carros {set; private get;} = new string[5];
 
 
@@ -13,18 +13,21 @@ public class Estacionamento
         do{
         Console.Clear();    
         Console.WriteLine("Digite o numero da placa do carro: ");
-            string p = Console.ReadLine();
+            string p = Console.ReadLine().ToUpper();
 
-        if(p.Length < 7 || p.Length > 7) 
-        /// verifica na função para o usuario escrever novamente o nome da placa
-        /// modificar variavel que guarda placa de carro para banco de dados....
+        int totalnumero = p.Count(Char.IsDigit);
+        int totaletra = p.Count(Char.IsLetter);
+
+        if(p.Length < 7 || p.Length > 7 || totalnumero < 3 || totaletra < 4) 
         {
-            Console.WriteLine("Esse modelo de placa não é valido, aperte qualquer tecla e digite novamamente...");
+            Console.Clear();
+            Console.WriteLine("   Esse modelo de placa não é valido, aperte qualquer tecla e digite novamamente... ");
                 Console.ReadLine();
 
         }
         else
         {
+            Console.Clear();
             Console.WriteLine("Placa Aprovada!");
             Console.WriteLine("Precione qualquer teclar...");
                 Console.ReadKey();
@@ -41,10 +44,19 @@ public class Estacionamento
         Console.Clear();
         for(int i=0; i < this.Carros.Length; i++)
         {
-            Console.WriteLine($"Vaga número {i} " + this.Carros[i]+" \n");
-        
+            if(this.Carros[i] == null)
+            {
+                 Console.Write("");
+
+            }
+            else
+            {
+            Console.WriteLine($"  {this.Carros[i]}  Vaga Nº {i} \n");
+    
+            }
+
         }
-        Console.WriteLine("Precione qualquet tecla para voltar ao menu;");
+        Console.WriteLine("Precione qualquer tecla para voltar ao menu;");
             Console.ReadKey();
 
     }
@@ -53,7 +65,7 @@ public class Estacionamento
     {
         bool guardado = false;
         Console.Clear();
-        Console.WriteLine("Digite o nome do proprieta ");
+        Console.WriteLine("Digite o nome do proprietario: ");
             carro = Console.ReadLine();
 
         for(int i = 0; i < Carros.Length; i++)
